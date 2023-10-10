@@ -60,6 +60,7 @@ main {
     text-transform: uppercase;
     align-self: start;
     margin: 2rem;
+    color: hsl(228, 12%, 48%);
 }
 
 .content-wrapper h2 {
@@ -72,30 +73,51 @@ main {
 .summary {
     font-weight: lighter;
     margin: 1rem 2rem;
-
+    color: hsl(228, 12%, 48%);
 }
 
 .price {
     font-family: 'Fraunces', serif;
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin: 0rem 2rem;
+    align-self: center;
+    max-width: auto;
+}
+
+.current {
+    font-size: xx-large;
+    color: hsl(158, 36%, 37%);
+    margin: 0;
 
 }
 
-.price .current {
-    font-size: xx-large;
-    color: hsl(158, 36%, 37%);
-    margin: 0rem 2rem;
-
+.old {
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    margin: 0;
 }
 
 button {
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    align-self: center;
+    align-items: center;
+    border: 0;
     margin:  2rem;
-    width: 100%;
-    max-width: auto;
+    padding: 1rem 2rem;
+    border-radius: 1vh;
+    width: 75%;
 }
+
+button:hover {
+    background-color: hsl(158, 89%, 11%);
+    cursor: pointer;
+}
+
+button img {
+    margin: 0rem 0.5rem;
+}
+
 
 /* responsive laptop */
 
@@ -106,5 +128,24 @@ button {
 /* responsive mobile */
 
 @media screen and (max-width: 375px) {
-
+    .card {
+        flex-direction: column;
+        width: 90%;
+        height: 90%;
+        border-radius: 1vh;
+    }
+    .img-wrapper {
+        width: 100%;
+        height: 100%;
+    }
+    .img-wrapper picture img {
+    border-radius: 1vh 1vh 0vh 0vh;
+    }
+    .content-wrapper {
+        width: 100%;
+        height: max-content;
+    }
+    button {
+        margin-bottom: 3rem;
+    }
 }
