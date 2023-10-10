@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 <!-- TODO changer l'URL -->
-- Live Site URL : [https://valentinjardot.github.io/qr-code-component-main/](https://valentinjardot.github.io/qr-code-component-main/)
+- Live Site URL : [https://valentinjardot.github.io/product-preview-card-component-main](https://valentinjardot.github.io/product-preview-card-component-main)
 - Repo Github : [https://github.com/ValentinJardot/product-preview-card-component-main](https://github.com/ValentinJardot/product-preview-card-component-main)
 
 ## Author
